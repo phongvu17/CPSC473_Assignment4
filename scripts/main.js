@@ -41,7 +41,7 @@ function addThumbClickHandler(thumb) {
 
     thumb.addEventListener('keyup', function(event) {
         event.preventDefault();
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < getThumbnailsArray().length; i++) {
             if (event.keyCode === KEY[i]) {
                 var thumb = getThumbnailsArray()[i];
                 setDetailsFromThumb(thumb);
